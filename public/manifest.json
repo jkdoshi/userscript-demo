@@ -1,0 +1,19 @@
+{
+  "name": "Scrape It!",
+  "description": "Example browser extension showing how to inject content scripts into matching pages",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "js": [
+        "build/bundle.js"
+      ],
+      "css": [
+        "build/bundle.css"
+      ],
+      "matches": [
+        "https://spinspire.com/articles"
+      ]
+    }
+  ]
+}
